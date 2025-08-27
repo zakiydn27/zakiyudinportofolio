@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Muhammad Zakiyudin</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome buat ikon LinkedIn, dll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #4CAF50, #2e7d32);
+      color: white;
+      border-radius: 0 0 30px 30px;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      margin: 15px 0;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-top: 10px;
+    }
+
+    header h2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .social-links a {
+      margin: 0 8px;
+      font-size: 28px;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #ddd;
+    }
+
+    /* Navigasi */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #4CAF50;
+    }
+
+    /* Section */
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #4CAF50;
+      border-bottom: 2px solid #4CAF50;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    section p, section li {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Card Style */
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      header h1 {
+        font-size: 1.6rem;
+      }
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Muhammad Zakiyudin</h1>
+    <img src="asset/WhatsApp Image 2025-08-12 at 09.12.27.jpeg" alt="Foto Profil">
+    <h2>Mahasiswa Teknik Informatika | Web Developer</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/muhammad-zakiyudin-318368307/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zakioudin@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/zakiydn27" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Menu Navigasi -->
+  <nav>
+    <a href="#tentang">Tentang Saya</a>
+    <a href="#pengalaman">Pengalaman</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#hobi">Hobi</a>
+  </nav>
+
+  <!-- Tentang Saya -->
+  <section id="tentang">
+    <div class="card">
+      <h3>Tentang Saya</h3>
+      <p>
+        Perkenalkan, saya <b>Muhammad Zakiyudin</b>, mahasiswa 
+        <b>Politeknik Elektronika Negeri Surabaya</b> jurusan 
+        <i>Teknik Informatika</i>. Memiliki keahlian di bidang 
+        <u>Instalasi Listrik</u>, <mark>Pemrograman PLC</mark>, 
+        serta pengalaman di industri percetakan offset dan packaging.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pengalaman -->
+  <section id="pengalaman">
+    <div class="card">
+      <h3>Pengalaman</h3>
+      <p><b>PT. Alam Diaraya</b> - <i>Helper Mechanic</i> (Jan 2023 - Mei 2023)</p>
+      <ul>
+        <li>Membantu perbaikan mesin Heidelberg SpeedMaster & mesin percetakan lain.</li>
+        <li>Melakukan perawatan rutin agar mesin tetap beroperasi optimal.</li>
+        <li>Berpartisipasi dalam perbaikan >15 mesin percetakan.</li>
+      </ul>
+      <p><b>BBMPV BOE Malang</b> - <i>Peserta IT</i> (Feb 2024 - Mei 2024)</p>
+      <ul>
+        <li>Membuat Website E-Laundry dengan HTML, CSS, JavaScript.</li>
+        <li>Membuat 3D Modelling untuk Metaverse Development.</li>
+        <li>Mempelajari dasar Java dan ReactJS.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pendidikan -->
+  <section id="pendidikan">
+    <div class="card">
+      <h3>Pendidikan</h3>
+      <p><b>SMK Negeri 3 Surabaya</b> (2022 - 2024)  
+      <br><i>Teknik Instalasi Tenaga Listrik</i></p>
+      <ul>
+        <li>Instalasi komponen MCB, MCCB, ELCB, PLC.</li>
+        <li>Rangkaian Forward Reverse, Star-Delta Manual/Otomatis.</li>
+        <li>Mengoperasikan software CX-Programmer, ZelioSoft, EasyBuilder, Autocad, MS Office.</li>
+      </ul>
+      <p><b>Politeknik Elektronika Negeri Surabaya</b> (2025 - 2028, Expected)  
+      <br><i>D3PJJ Teknik Informatika</i></p>
+    </div>
+  </section>
+
+  <!-- Keahlian -->
+  <section id="keahlian">
+    <div class="card">
+      <h3>Keahlian</h3>
+      <ul>
+        <li>⚡ Instalasi Listrik Rumah Tangga</li>
+        <li>⚙️ Pemrograman PLC (CX Programmer, ZelioSoft)</li>
+        <li>🖥️ Web Development (HTML, CSS, JavaScript)</li>
+        <li>🖨️ Maintenance Printing & Packaging</li>
+        <li>💻 Belajar Teknologi Baru</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Hobi -->
+  <section id="hobi">
+    <div class="card">
+      <h3>Hobi</h3>
+      <ul>
+        <li>🎮 Bermain dan mengembangkan game</li>
+        <li>📷 Fotografi</li>
+        <li>📖 Membaca buku teknologi</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Muhammad Zakiyudin</p>
+  </footer>
+</body>
+</html>

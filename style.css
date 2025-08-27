@@ -1,0 +1,134 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f0f4f8 0%, #d9e7ff 100%);
+    color: #222;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background: #2d5be3;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(45, 91, 227, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navigation styling */
+nav {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(45, 91, 227, 0.05);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav a {
+    color: #2d5be3;
+    text-decoration: none;
+    margin: 0 1.2rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #163a7d;
+}
+
+/* Main content styling */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(45, 91, 227, 0.08);
+    padding: 2rem 2.5rem;
+}
+
+/* Section titles */
+section h2 {
+    color: #2d5be3;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-left: 4px solid #2d5be3;
+    padding-left: 0.7rem;
+}
+
+/* Portfolio cards */
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.portfolio-card {
+    background: #f8faff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(45, 91, 227, 0.06);
+    padding: 1.2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(45, 91, 227, 0.12);
+}
+
+.portfolio-card h3 {
+    color: #163a7d;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #2d5be3;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+    section h2 {
+        font-size: 1.3rem;
+        padding-left: 0.4rem;
+    }
+}
+.social-links a {
+  margin: 0 8px;
+  font-size: 28px;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none; /* <--- tambahkan ini */
+}
